@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic-AI Applications | Kalsnet</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #00e6ff;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #cceeff;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 20px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(0,230,255,0.15);
+        }
+
+        .card h3 {
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #d9faff;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #00e6ff;
+            color: black;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #00bcd4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>KNet-National-Critical-Infrastructure-Cyber Reselience-And-Failure-Detection-Platform</h1>
+    <p class="subtitle">Kalsnet (KNet) Consulting Group | AI • Cyber • Agentic Systems/GraphTheory</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h3>KNet-National-Critical-Infrastructure-Cyber Reselience-And-Failure-Detection-Platform </h3>
+        <p> KNet National Critical Infrastructure Cyber Resilience and Cascading Failure Detection Platform
+
+Overview: 
+
+The KNet platform, developed by Randy Singh of Kalsnet (KNet) Consulting Group, is a decision-support application for government agencies and the operators of national critical infrastructure. It shows how energy, water, communications, transportation, healthcare, finance, defense and emergency services assets depend on each other and on shared third-party vendors. It also answers a central question during a crisis: is a group of outages an independent technical failure, an accidental cascading failure, or possibly a coordinated cyberattack? One analytic safeguard is built in throughout. The platform never labels simultaneous outages as a cyberattack unless corroborating evidence supports it. When the evidence is not enough to classify a group of outages, it is marked Undetermined and is not attributed to an attacker.
+
+What it can do:
+
+The platform has twelve modules: an Executive Dashboard with a national risk map, a Dependency Graph and Knowledge Graph explorer, Incident Correlation and Attribution, AI Anomaly Detection, a Cascade Simulation "digital twin," Third-Party Vendor Concentration analysis, Explainable Risk Scoring, Response and SOAR playbooks, an Executive Report, Data Management, and an Audit Log. It finds single points of failure, ranks every asset on a 0 to 100 risk scale, and simulates how a single failure would spread across sectors and states. It also recommends the five assets where adding protection would most reduce the impact on the population. In addition, it finds "hidden couplings," meaning assets in different sectors that look unrelated on a map but rely on the same vendor. Each module can export its results, methodology, field definitions and formulas as PDF, Word, text or CSV files.
+
+Tools and technologies:
+
+The application is written in Python as a single file and runs in a web browser through Streamlit. NetworkX handles the graph analytics: betweenness centrality, PageRank and articulation points, which are single points of failure. Scikit-learn's Isolation Forest provides the machine-learning anomaly detection. Pandas and NumPy process the data, and Monte Carlo methods drive the simulations. Plotly and Matplotlib produce the interactive charts and maps, and Graphviz draws the process diagrams. ReportLab and python-docx generate the PDF and Word reports. The application also maps behavior to MITRE ATT&CK for ICS techniques, includes an offline map of the United States so it can run without internet access, and offers role-based access control with three roles: viewer, analyst and administrator.
+
+How it works:
+
+Users can run the platform on built-in synthetic data, which contains five fictional scenarios with known answers, or upload real records as CSV, Excel or JSON files. The system first builds a dependency network linking assets to their suppliers. It then compares each asset's telemetry against that asset's own normal behavior and flags cyber-type warning signs, such as spikes in failed logins or unusual outbound data, in the 24 hours before an incident. Next, it groups related incidents by timing, dependency paths, shared vendors and location. Each group is scored with an evidence-weighted probability model. Hard indicators, such as threat-intelligence matches, malware signatures and unauthorized configuration changes, raise the likelihood of malicious activity. Physical causes, weather and maintenance windows lower it. A cyber assessment requires at least two independent categories of corroborating evidence. Analysts record final determinations with a written justification, and every action, including logins, uploads, approvals and exports, is written to an audit trail.
+
+Real-world benefits:
+
+The platform helps agencies such as DHS/CISA, DOE, the FAA and DoD, along with infrastructure owners, find weak points before they cause nationwide disruption and direct limited resilience funding to where it does the most good. Its evidence-based approach reduces the risk of misattributing an outage, which helps prevent public panic and unwarranted escalation. It also shortens the time needed to tell an attack apart from an accident during a fast-moving incident. Its playbooks set out prioritized, sector-specific response steps, including which partner agencies and ISACs to contact, and no action is taken without human approval. Together with the executive reports, these support briefing leaders, running exercises, planning for resilience and reviewing events after they happen.
+
+Note:
+
+that this is a demonstration build. The vendors and events are fictional, and the built-in demo sign-in passwords would need to be replaced with real user accounts before any real-world use.  </p>
+        <a href="https://e598aals6qbbpmqq2hruej.streamlit.app/" target="_blank" class="btn">Launch App</a>
+    </div>
+    
+    
+
+<footer>
+    © 2026 Kalsnet (KNet) Consulting Group | Agentic-AI Solutions
+</footer>
+
+</body>
+</html>
